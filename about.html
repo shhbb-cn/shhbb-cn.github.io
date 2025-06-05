@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - 上海哈比比国际贸易有限公司 | 石油助剂专家</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #1a3a6c;
+            --accent: #ff6b00;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --success: #28a745;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f5f7fa;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: #004494;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-accent {
+            background: var(--accent);
+        }
+        
+        .btn-accent:hover {
+            background: #e05e00;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--secondary);
+            display: inline-block;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--accent);
+        }
+        
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo h1 {
+            font-size: 24px;
+            margin-bottom: 0;
+            color: var(--secondary);
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin-left: 30px;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 16px;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .nav-menu a.active, .nav-menu a:hover {
+            color: var(--primary);
+        }
+        
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+        
+        .nav-menu a.active::after, .nav-menu a:hover::after {
+            width: 100%;
+        }
+        
+        .language-switcher {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        
+        .language-switcher button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        
+        .language-switcher button.active {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary) 0%, #0a2c5e 100%);
+            color: white;
+            padding: 180px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTIwMCAxMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiMwMDQwODAiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMCAwQzAgMCAyMDAgMTUwIDMwMCAyNTBDNDAwIDM1MCA2MDAgNjUwIDgwMCA4NTBDMTAwMCAxMDUwIDEyMDAgMTIwMCAxMjAwIDEyMDBIMFYwWiI+PC9wYXRoPjxwYXRoIGQ9Ik0wIDEyMDBDMTUwIDEwNTAgMzAwIDkwMCA0NTAgNzUwQzYwMCA2MDAgODAwIDQwMCA5NTAgMjUwQzExMDAgMTAwIDEyMDAgMCAxMjAwIDBIMFYxMjAwWiI+PC9wYXRoPjwvZz48L3N2Zz4=');
+            opacity: 0.2;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 650px;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .about-text h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: var(--accent);
+        }
+        
+        .about-image {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            height: 500px;
+            background: linear-gradient(45deg, #1a3a6c, #0a2c5e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        
+        /* Timeline */
+        .timeline {
+            background: #f0f4f8;
+            padding: 80px 0;
+        }
+        
+        .timeline-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: var(--primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 4px solid var(--primary);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::after {
+            right: -12px;
+        }
+        
+        .right::after {
+            left: -8px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .timeline-year {
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        /* Team Section */
+        .team {
+            padding: 80px 0;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .member-image {
+            height: 250px;
+            background: linear-gradient(45deg, #1a3a6c, #0a2c5e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .member-info {
+            padding: 20px;
+        }
+        
+        .member-info h3 {
+            color: var(--secondary);
+            margin-bottom: 5px;
+        }
+        
+        .member-position {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        /* Certificates */
+        .certificates {
+            background: var(--light);
+            padding: 80px 0;
+        }
+        
+        .certs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        
+        .cert-item {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .cert-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cert-icon {
+            font-size: 48px;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        /* Values Section */
+        .values {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .value-card {
+            text-align: center;
+            padding: 40px 30px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            transition: var(--transition);
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+            background: white;
+            box-shadow: var(--shadow);
+        }
+        
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+        }
+        
+        /* Contact CTA */
+        .contact-cta {
+            background: linear-gradient(135deg, var(--secondary) 0%, #0a2c5e 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .contact-cta h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 60px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--accent);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-block;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .footer-contact li {
+            margin-bottom: 15px;
+            display: flex;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                height: 400px;
+                order: -1;
+            }
+            
+            .timeline-container::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item.right {
+                left: 0;
+            }
+            
+            .timeline-item.left::after, 
+            .timeline-item.right::after {
+                left: 21px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .nav-menu {
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                transform: translateY(-150%);
+                transition: var(--transition);
+            }
+            
+            .nav-menu.active {
+                transform: translateY(0);
+            }
+            
+            .nav-menu li {
+                margin: 15px 0;
+            }
+            
+            .language-switcher {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+            
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-placeholder">
+                    <svg width="50" height="50" viewBox="0 0 50 50">
+                        <rect width="50" height="50" fill="#1a3a6c" rx="8"></rect>
+                        <text x="25" y="30" text-anchor="middle" fill="#ff6b00" font-family="Arial" font-size="20" font-weight="bold">HB</text>
+                    </svg>
+                </div>
+                <h1 data-translate="company_name">上海<span>哈比比</span></h1>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav_home">首页</a></li>
+                    <li><a href="index.html#products" data-translate="nav_products">产品中心</a></li>
+                    <li><a href="index.html#contact" data-translate="nav_contact">联系我们</a></li>
+                    <li><a href="about.html" class="active" data-translate="nav_about">关于我们</a></li>
+                </ul>
+            </nav>
+            
+            <div class="language-switcher">
+                <button id="lang-zh" class="active">中文</button>
+                <button id="lang-en">EN</button>
+            </div>
+            
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-translate="about_hero_title">关于上海哈比比国际贸易有限公司</h1>
+                <p data-translate="about_hero_subtitle">深耕石油助剂领域十余年，为全球石油工业提供专业化学品解决方案</p>
+                <div class="hero-buttons">
+                    <!-- <a href="#history" class="btn btn-accent" data-translate="hero_btn_history">发展历程</a>
+                    <a href="#team" class="btn btn-outline" data-translate="hero_btn_team">认识团队</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-translate="about_title">公司简介</h2>
+                    <p data-translate="about_desc_1">上海哈比比国际贸易有限公司，总部位于上海奉贤区，是一家专注于石油助剂产品研发、生产与国际贸易的高新技术企业。</p>
+                    <p data-translate="about_desc_2">我们与国内外多所石油化工研究机构建立战略合作关系，持续推动产品创新和技术升级。</p>
+                    <p data-translate="about_desc_3">经过十余年的发展，公司产品已远销全球30多个国家和地区，包括中东、东南亚、非洲、南美等主要产油区，成为多家国际知名石油公司的长期合作伙伴。</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">12+</div>
+                            <p data-translate="stat_experience">年行业经验</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">300+</div>
+                            <p data-translate="stat_clients">全球客户</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">30+</div>
+                            <p data-translate="stat_countries">国家与地区</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <i class="fas fa-industry" style="font-size: 120px;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="values_title">企业价值观</h2>
+                <p data-translate="values_subtitle">我们的核心理念与经营哲学</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 data-translate="value_title_1">创新驱动</h3>
+                    <p data-translate="value_desc_1">持续投入研发，推动石油助剂技术创新，引领行业发展趋势，为客户提供前沿解决方案。</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 data-translate="value_title_2">客户至上</h3>
+                    <p data-translate="value_desc_2">以客户需求为中心，提供个性化解决方案，建立长期合作伙伴关系，实现共同成长。</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-translate="value_title_3">绿色环保</h3>
+                    <p data-translate="value_desc_3">开发环保型石油助剂产品，减少对环境的影响，推动石油工业可持续发展。</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 data-translate="value_title_4">全球视野</h3>
+                    <p data-translate="value_desc_4">立足中国，服务全球，深入了解不同区域市场需求，提供本地化解决方案。</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 data-translate="value_title_5">诚信经营</h3>
+                    <p data-translate="value_desc_5">坚持诚信为本，遵守商业道德，建立透明、公正、互信的合作关系。</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-translate="value_title_6">团队协作</h3>
+                    <p data-translate="value_desc_6">倡导开放包容的企业文化，发挥团队智慧，共同应对挑战，实现企业目标。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+ 
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2 data-translate="cta_title">与我们合作，共创石油工业新未来</h2>
+            <p data-translate="cta_desc">无论您需要产品咨询、技术支持还是定制化解决方案，我们的专业团队随时为您服务</p>
+            <a href="index.html#contact" class="btn btn-accent" style="margin-top: 30px;" data-translate="cta_button">联系我们</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 data-translate="footer_about">关于哈比比</h4>
+                    <p data-translate="footer_about_desc">上海哈比比国际贸易有限公司，专注于石油助剂产品的研发与全球供应，为油田和炼油行业提供专业解决方案。</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-translate="footer_nav">快速导航</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-translate="nav_home">首页</a></li>
+                        <li><a href="index.html#products" data-translate="nav_products">产品中心</a></li>
+                        <li><a href="index.html#contact" data-translate="nav_contact">联系我们</a></li>
+                        <li><a href="about.html" data-translate="nav_about">关于我们</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-translate="footer_products">产品类别</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-translate="product_1">钻井液添加剂</a></li>
+                        <li><a href="#" data-translate="product_2">采油用化学品</a></li>
+                        <li><a href="#" data-translate="product_3">炼油助剂</a></li>
+                        <li><a href="#" data-translate="product_4">水处理化学品</a></li>
+                        <li><a href="#" data-translate="product_5">特种化学品</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-translate="footer_contact">联系我们</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-translate="footer_address">上海市奉贤区金海公路6055号11幢5层</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+86 185 9616 3506</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>shanghaihabibi@163.com</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+86 185 9616 3506</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p data-translate="copyright">&copy; 2023 上海哈比比国际贸易有限公司 版权所有 | 沪ICP</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 翻译字典
+        const translations = {
+            'zh': {
+                'company_name': '上海<span>哈比比</span>',
+                'nav_home': '首页',
+                'nav_about': '关于我们',
+                'nav_products': '产品中心',
+                'nav_contact': '联系我们',
+                'about_hero_title': '关于上海哈比比国际贸易有限公司',
+                'about_hero_subtitle': '深耕石油助剂领域十余年，为全球石油工业提供专业化学品解决方案',
+                'hero_btn_history': '发展历程',
+                'hero_btn_team': '认识团队',
+                'about_title': '公司简介',
+                'about_desc_1': '上海哈比比国际贸易有限公司，总部位于上海奉贤区，是一家专注于石油助剂产品研发、生产与国际贸易的高新技术企业。',
+                'about_desc_2': '我们与国内外多所石油化工研究机构建立战略合作关系，持续推动产品创新和技术升级。',
+                'about_desc_3': '经过十余年的发展，公司产品已远销全球30多个国家和地区，包括中东、东南亚、非洲、南美等主要产油区，成为多家国际知名石油公司的长期合作伙伴。',
+                'stat_experience': '年行业经验',
+                'stat_clients': '全球客户',
+                'stat_countries': '国家与地区',
+                'values_title': '企业价值观',
+                'values_subtitle': '我们的核心理念与经营哲学',
+                'value_title_1': '创新驱动',
+                'value_desc_1': '持续投入研发，推动石油助剂技术创新，引领行业发展趋势，为客户提供前沿解决方案。',
+                'value_title_2': '客户至上',
+                'value_desc_2': '以客户需求为中心，提供个性化解决方案，建立长期合作伙伴关系，实现共同成长。',
+                'value_title_3': '绿色环保',
+                'value_desc_3': '开发环保型石油助剂产品，减少对环境的影响，推动石油工业可持续发展。',
+                'value_title_4': '全球视野',
+                'value_desc_4': '立足中国，服务全球，深入了解不同区域市场需求，提供本地化解决方案。',
+                'value_title_5': '诚信经营',
+                'value_desc_5': '坚持诚信为本，遵守商业道德，建立透明、公正、互信的合作关系。',
+                'value_title_6': '团队协作',
+                'value_desc_6': '倡导开放包容的企业文化，发挥团队智慧，共同应对挑战，实现企业目标。',
+                'history_title': '发展历程',
+                'cta_title': '与我们合作，共创石油工业新未来',
+                'cta_desc': '无论您需要产品咨询、技术支持还是定制化解决方案，我们的专业团队随时为您服务',
+                'cta_button': '联系我们',
+                'footer_about': '关于哈比比',
+                'footer_about_desc': '上海哈比比国际贸易有限公司，专注于石油助剂产品的研发与全球供应，为油田和炼油行业提供专业解决方案。',
+                'footer_nav': '快速导航',
+                'footer_products': '产品类别',
+                'product_1': '钻井液添加剂',
+                'product_2': '采油用化学品',
+                'product_3': '炼油助剂',
+                'product_4': '水处理化学品',
+                'product_5': '特种化学品',
+                'footer_contact': '联系我们',
+                'footer_address': '上海市奉贤区金海公路6055号11幢5层',
+                'copyright': '&copy; 2023 上海哈比比国际贸易有限公司 版权所有 | 沪ICP备12345678号'
+            },
+            'en': {
+                'company_name': 'Shanghai<span>Habibi</span>',
+                'nav_home': 'Home',
+                'nav_about': 'About Us',
+                'nav_products': 'Products',
+                'nav_contact': 'Contact',
+                'about_hero_title': 'About Shanghai Habibi International Trading Co., Ltd.',
+                'about_hero_subtitle': 'Over a decade of expertise in oil additives, providing professional chemical solutions for the global petroleum industry',
+                'hero_btn_history': 'Our History',
+                'hero_btn_team': 'Meet Our Team',
+                'about_title': 'Company Profile',
+                'about_desc_1': 'Shanghai Habibi International Trading Co., Ltd., headquartered in Fengxian District, Shanghai, is a high-tech enterprise specializing in the R&D, production and international trade of oil additive products.',
+                'about_desc_2': 'We have established strategic partnerships with multiple petrochemical research institutions worldwide to drive continuous product innovation and technological advancement.',
+                'about_desc_3': 'After more than ten years of development, our products have been exported to over 30 countries and regions including the Middle East, Southeast Asia, Africa, and South America, becoming a long-term partner to many internationally renowned oil companies.',
+                'stat_experience': 'Years of Experience',
+                'stat_clients': 'Global Clients',
+                'stat_countries': 'Countries & Regions',
+                'values_title': 'Corporate Values',
+                'values_subtitle': 'Our Core Philosophy',
+                'value_title_1': 'Innovation Driven',
+                'value_desc_1': 'Continuously invest in R&D, promote technological innovation in oil additives, lead industry trends, and provide cutting-edge solutions for customers.',
+                'value_title_2': 'Customer First',
+                'value_desc_2': 'Focus on customer needs, provide customized solutions, establish long-term partnerships, and achieve mutual growth.',
+                'value_title_3': 'Green & Eco-Friendly',
+                'value_desc_3': 'Develop environmentally friendly oil additive products, reduce environmental impact, and promote sustainable development in the petroleum industry.',
+                'value_title_4': 'Global Vision',
+                'value_desc_4': 'Based in China, serving the world, deeply understand market demands in different regions, and provide localized solutions.',
+                'value_title_5': 'Integrity Management',
+                'value_desc_5': 'Adhere to integrity, comply with business ethics, and establish transparent, fair, and trustworthy cooperative relationships.',
+                'value_title_6': 'Team Collaboration',
+                'value_desc_6': 'Advocate an open and inclusive corporate culture, leverage team wisdom, jointly address challenges, and achieve corporate goals.',
+                'cta_title': 'Collaborate with Us to Create a New Future for the Petroleum Industry',
+                'cta_desc': 'Whether you need product consultation, technical support or customized solutions, our professional team is ready to serve you',
+                'cta_button': 'Contact Us',
+                'footer_about': 'About Habibi',
+                'footer_about_desc': 'Shanghai Habibi International Trading Co., Ltd., specializing in R&D and global supply of oil additive products, providing professional solutions for oilfield and refinery industries.',
+                'footer_nav': 'Quick Links',
+                'footer_products': 'Product Categories',
+                'product_1': 'Drilling Fluid Additives',
+                'product_2': 'Oil Production Chemicals',
+                'product_3': 'Refining Additives',
+                'product_4': 'Water Treatment Chemicals',
+                'product_5': 'Specialty Chemicals',
+                'footer_contact': 'Contact Us',
+                'footer_address': '5th Floor, Building 11, No. 6055 Jinhai Highway, Fengxian District, Shanghai, China.',
+                'copyright': '&copy; 2023 Shanghai Habibi International Trading Co., Ltd. All Rights Reserved | ICP 12345678'
+            }
+        };
+
+        // 当前语言状态
+        let currentLang = 'zh';
+
+        // 切换语言函数
+        function switchLanguage(lang) {
+            currentLang = lang;
+            
+            // 更新所有带翻译标记的元素
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.value = translations[lang][key];
+                    } else {
+                        element.innerHTML = translations[lang][key];
+                    }
+                }
+            });
+            
+            // 更新语言按钮状态
+            document.querySelectorAll('.language-switcher button').forEach(button => {
+                button.classList.remove('active');
+            });
+            document.getElementById(`lang-${lang}`).classList.add('active');
+            
+            // 更新页面语言属性
+            document.documentElement.lang = lang;
+        }
+
+        // DOM加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            // 移动菜单切换
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                mobileToggle.querySelector('i').classList.toggle('fa-bars');
+                mobileToggle.querySelector('i').classList.toggle('fa-times');
+            });
+            
+            // 语言切换事件
+            document.getElementById('lang-zh').addEventListener('click', () => switchLanguage('zh'));
+            document.getElementById('lang-en').addEventListener('click', () => switchLanguage('en'));
+            
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('#')) {
+                        e.preventDefault();
+                        
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                            window.scrollTo({
+                                top: target.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                            
+                            // 关闭移动菜单
+                            navMenu.classList.remove('active');
+                            mobileToggle.querySelector('i').classList.add('fa-bars');
+                            mobileToggle.querySelector('i').classList.remove('fa-times');
+                        }
+                    }
+                });
+            });
+            
+            // 头部滚动效果
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('header');
+                if (window.scrollY > 100) {
+                    header.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+                    header.style.background = 'rgba(255, 255, 255, 0.98)';
+                } else {
+                    header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+                    header.style.background = 'rgba(255, 255, 255, 0.95)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
