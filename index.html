@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上海哈比比国际贸易有限公司 | 石油助剂产品专家</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #1a3a6c;
+            --accent: #ff6b00;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --success: #28a745;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f5f7fa;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: #004494;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-accent {
+            background: var(--accent);
+        }
+        
+        .btn-accent:hover {
+            background: #e05e00;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--secondary);
+            display: inline-block;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--accent);
+        }
+        
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo h1 {
+            font-size: 24px;
+            margin-bottom: 0;
+            color: var(--secondary);
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin-left: 30px;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 16px;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+        
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+        
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+        
+        .language-switcher {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        
+        .language-switcher button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        
+        .language-switcher button.active {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary) 0%, #0a2c5e 100%);
+            color: white;
+            padding: 180px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTIwMCAxMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiMwMDQwODAiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMCAwQzAgMCAyMDAgMTUwIDMwMCAyNTBDNDAwIDM1MCA2MDAgNjUwIDgwMCA4NTBDMTAwMCAxMDUwIDEyMDAgMTIwMCAxMjAwIDEyMDBIMFYwWiI+PC9wYXRoPjxwYXRoIGQ9Ik0wIDEyMDBDMTUwIDEwNTAgMzAwIDkwMCA0NTAgNzUwQzYwMCA2MDAgODAwIDQwMCA5NTAgMjUwQzExMDAgMTAwIDEyMDAgMCAxMjAwIDBIMFYxMjAwWiI+PC9wYXRoPjwvZz48L3N2Zz4=');
+            opacity: 0.2;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 650px;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        /* Services Section */
+        .services {
+            background: var(--light);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: white;
+            font-size: 36px;
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+        
+        /* Products Section */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-image {
+            height: 200px;
+            background: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .product-content {
+            padding: 20px;
+        }
+        
+        .product-content h3 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+        
+        .product-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .spec-item {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        
+        .spec-item i {
+            color: var(--primary);
+            margin-right: 5px;
+        }
+        
+        /* Product Categories */
+        .categories {
+            background: #f0f4f8;
+            padding: 60px 0;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+        }
+        
+        .category-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+        }
+        
+        .category-card h3 {
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+        
+        .category-card .count {
+            display: block;
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(to right, var(--light) 50%, var(--secondary) 50%);
+        }
+        
+        .contact-container {
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-form {
+            flex: 1;
+            padding: 40px;
+        }
+        
+        .contact-form h3 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+        }
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .contact-info {
+            flex: 0 0 40%;
+            background: var(--secondary);
+            color: white;
+            padding: 40px;
+        }
+        
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            margin-bottom: 25px;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .contact-details h4 {
+            color: white;
+            margin-bottom: 5px;
+        }
+        
+        /* Products Page */
+        .products-page {
+            padding: 100px 0 60px;
+        }
+        
+        .products-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        
+        .products-filter {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .filter-btn {
+            padding: 8px 20px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 8px;
+        }
+        
+        .page-item {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .page-item.active, .page-item:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 60px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--accent);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-block;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .footer-contact li {
+            margin-bottom: 15px;
+            display: flex;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+        }
+        
+        /* Language Notification */
+        .language-notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+            transform: translateY(150%);
+            transition: transform 0.5s ease;
+        }
+        
+        .language-notification.show {
+            transform: translateY(0);
+        }
+        
+        .language-notification i {
+            color: var(--accent);
+            font-size: 20px;
+        }
+        
+        .language-notification button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        /* Industry Features */
+        .industry-features {
+            background: linear-gradient(135deg, #0a2c5e 0%, #1a3a6c 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            .contact-info {
+                flex: 1;
+            }
+            
+            .products-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .nav-menu {
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                transform: translateY(-150%);
+                transition: var(--transition);
+            }
+            
+            .nav-menu.active {
+                transform: translateY(0);
+            }
+            
+            .nav-menu li {
+                margin: 15px 0;
+            }
+            
+            .language-switcher {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+            
+            .products-filter {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-placeholder">
+                    <svg width="50" height="50" viewBox="0 0 50 50">
+                        <rect width="50" height="50" fill="#1a3a6c" rx="8"></rect>
+                        <text x="25" y="30" text-anchor="middle" fill="#ff6b00" font-family="Arial" font-size="20" font-weight="bold">HB</text>
+                    </svg>
+                </div>
+                <h1>上海<span>哈比比</span></h1>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" data-key="nav.home">首页</a></li>
+                    <li><a href="#services" data-key="nav.services">服务</a></li>
+                    <li><a href="#products" class="active" data-key="nav.products">产品中心</a></li>
+                    <li><a href="#contact" data-key="nav.contact">联系我们</a></li>
+                    <li><a href="about.html" data-key="nav.about">关于我们</a></li>
+                </ul>
+            </nav>
+            
+            <div class="language-switcher">
+                <button class="active" data-lang="zh">中文</button>
+                <button data-lang="en">EN</button>
+            </div>
+            
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-key="hero.title">石油助剂全球供应商，专业油田化学品解决方案</h1>
+                <p data-key="hero.subtitle">上海哈比比国际贸易有限公司，专注于为全球石油行业提供高质量的助剂产品。拥有10年行业经验，产品服务于全球30多个国家的油田和炼油厂。</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-accent" data-key="hero.btn1">浏览产品</a>
+                    <a href="#contact" class="btn btn-outline" data-key="hero.btn2">获取技术资料</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Features -->
+    <section class="industry-features">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-key= "advantage.title" style="color:white;">石油助剂核心优势</h2>
+                <p data-key= "advantage.desc" style="color:rgba(255,255,255,0.8);">专业品质，全球认证，可靠供应</p>
+            </div>
+            <div class="features-container">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 data-key= "advantage.item1.title">专业技术</h3>
+                    <p data-key="advantage.item1.desc">拥有石油化工专业研发团队，持续创新产品配方</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 data-key="advantage.item2.title">国际认证</h3>
+                    <p data-key="advantage.item2.desc">所有产品通过API、ISO9001等国际质量体系认证</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 data-key="advantage.item3.title">全球供应</h3>
+                    <p data-key="advantage.item3.desc">完善的国际物流体系，确保全球范围内及时交付</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-key="services.title">我们的核心服务</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-oil-well"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-key="services.item1.title">油田化学品供应</h3>
+                        <p data-key="services.item1.desc">提供钻井液添加剂、完井液、压裂液等全套油田化学品解决方案。</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-key="services.item2.title">炼油助剂定制</h3>
+                        <p data-key="services.item2.desc">针对炼油工艺需求，提供催化剂、缓蚀剂、阻垢剂等定制化产品。</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-key="services.item3.title">全球物流支持</h3>
+                        <p data-key="services.item3.desc">危险品专业运输，全球主要石油产区门到门配送服务。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-key="categories.title">产品分类</h2>
+                <p data-key="categories.subtitle">专业石油助剂产品系列</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3 data-key="categories.item1.title">钻井液添加剂</h3>
+                    <p data-key="categories.item1.desc">降滤失剂、增粘剂、页岩抑制剂等</p>
+                    <span class="count" data-key="categories.item1.count">22 种产品</span>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 data-key="categories.item2.title">采油用化学品</h3>
+                    <p data-key="categories.item2.desc">破乳剂、缓蚀剂、清蜡剂等</p>
+                    <span class="count" data-key="categories.item2.count">18 种产品</span>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3 data-key="categories.item3.title">炼油助剂</h3>
+                    <p data-key="categories.item3.desc">催化剂、中和剂、阻垢剂等</p>
+                    <span class="count" data-key="categories.item3.count">15 种产品</span>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 data-key="categories.item4.title">水处理化学品</h3>
+                    <p data-key="categories.item4.desc">絮凝剂、杀菌剂、缓蚀剂等</p>
+                    <span class="count" data-key="categories.item4.count">12 种产品</span>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3 data-key="categories.item5.title">油田专用化学品</h3>
+                    <p data-key="categories.item5.desc">解堵剂、调剖剂、防膨剂等</p>
+                    <span class="count" data-key="categories.item5.count">10 种产品</span>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3 data-key="categories.item6.title">特种化学品</h3>
+                    <p data-key="categories.item6.desc">消泡剂、润滑剂、表面活性剂等</p>
+                    <span class="count" data-key="categories.item6.count">8 种产品</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-page" id="products">
+        <div class="container">
+            <div class="products-header">
+                <div>
+                    <h2 data-key="products.title">石油助剂产品中心</h2>
+                    <p data-key="products.subtitle">专业油田化学品解决方案</p>
+                </div>
+                <div>
+                    <!-- <input type="text" class="form-control" placeholder="搜索产品..." data-key="products.search" style="width: 300px; max-width: 100%;"> -->
+                </div>
+            </div>
+            
+            <div class="products-filter">
+                <!-- <button class="filter-btn active" data-key="filter.all">所有产品</button>
+                <button class="filter-btn" data-key="filter.hot">热销产品</button>
+                <button class="filter-btn" data-key="filter.new">新产品</button>
+                <button class="filter-btn" data-key="filter.custom">定制产品</button> -->
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge" data-key="badge.hot">热销</div>
+                        <div style="width:100%;height:100%;background:#e0e0e0;display:flex;align-items:center;justify-content:center;color:#666;background:linear-gradient(45deg, #1a3a6c, #0a2c5e);">
+                            <i class="fas fa-vial" style="font-size:48px;color:white;"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 data-key="product1.title">高效破乳剂</h3>
+                        <p data-key="product1.desc">快速分离油水乳液，适用于各种原油类型</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-flask"></i> <span data-key="product1.spec1">阳离子型</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-temperature-high"></i> <span data-key="product1.spec2">耐高温</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-box"></i> <span data-key="product1.spec3">MOQ: 1吨</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-outline" data-key="action.inquiry">获取技术参数</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge" data-key="badge.new">新品</div>
+                        <div style="width:100%;height:100%;background:#e0e0e0;display:flex;align-items:center;justify-content:center;color:#666;background:linear-gradient(45deg, #1a3a6c, #0a2c5e);">
+                            <i class="fas fa-oil-can" style="font-size:48px;color:white;"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 data-key="product2.title">钻井液降滤失剂</h3>
+                        <p data-key="product2.desc">有效控制滤失量，保护油气层</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-certificate"></i> <span data-key="product2.spec1">API认证</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-vial"></i> <span data-key="product2.spec2">低固相</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-box"></i> <span data-key="product2.spec3">MOQ: 2吨</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-outline" data-key="action.inquiry">获取技术参数</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <div style="width:100%;height:100%;background:#e0e0e0;display:flex;align-items:center;justify-content:center;color:#666;background:linear-gradient(45deg, #1a3a6c, #0a2c5e);">
+                            <i class="fas fa-shield-alt" style="font-size:48px;color:white;"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 data-key="product3.title">高效缓蚀剂</h3>
+                        <p data-key="product3.desc">保护设备免受腐蚀，延长使用寿命</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-flask"></i> <span data-key="product3.spec1">有机胺类</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tint"></i> <span data-key="product3.spec2">水溶性</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-box"></i> <span data-key="product3.spec3">MOQ: 1吨</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-outline" data-key="action.inquiry">获取技术参数</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge" data-key="badge.hot">热销</div>
+                        <div style="width:100%;height:100%;background:#e0e0e0;display:flex;align-items:center;justify-content:center;color:#666;background:linear-gradient(45deg, #1a3a6c, #0a2c5e);">
+                            <i class="fas fa-wind" style="font-size:48px;color:white;"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 data-key="product4.title">高效消泡剂</h3>
+                        <p data-key="product4.desc">快速消除工业过程中的泡沫问题</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-flask"></i> <span data-key="product4.spec1">有机硅类</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-temperature-high"></i> <span data-key="product4.spec2">耐高温</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-box"></i> <span data-key="product4.spec3">MOQ: 500kg</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-outline" data-key="action.inquiry">获取技术参数</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <div style="width:100%;height:100%;background:#e0e0e0;display:flex;align-items:center;justify-content:center;color:#666;background:linear-gradient(45deg, #1a3a6c, #0a2c5e);">
+                            <i class="fas fa-snowflake" style="font-size:48px;color:white;"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 data-key="product5.title">防蜡剂</h3>
+                        <p data-key="product5.desc">防止油井结蜡，保障生产连续性</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-flask"></i> <span data-key="product5.spec1">聚合物型</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-temperature-low"></i> <span data-key="product5.spec2">耐低温</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-box"></i> <span data-key="product5.spec3">MOQ: 1吨</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-outline" data-key="action.inquiry">获取技术参数</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge" data-key="badge.new">新品</div>
+                        <div style="width:100%;height:100%;background:#e0e0e0;display:flex;align-items:center;justify-content:center;color:#666;background:linear-gradient(45deg, #1a3a6c, #0a2c5e);">
+                            <i class="fas fa-bacteria" style="font-size:48px;color:white;"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 data-key="product6.title">高效杀菌剂</h3>
+                        <p data-key="product6.desc">控制微生物生长，防止系统腐蚀</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-flask"></i> <span data-key="product6.spec1">季铵盐类</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-certificate"></i> <span data-key="product6.spec2">环保型</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-box"></i> <span data-key="product6.spec3">MOQ: 500kg</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-outline" data-key="action.inquiry">获取技术参数</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <!-- <div class="page-item active">1</div>
+                <div class="page-item">2</div>
+                <div class="page-item">3</div>
+                <div class="page-item"><i class="fas fa-chevron-right"></i></div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-key="contact.title" style="color: #e05e00;">联系我们</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <!-- <h3 data-key="form.title">技术咨询与报价</h3> -->
+                    <form id="inquiryForm">
+                        <div class="form-group">
+                            <!-- <label for="name" data-key="form.name">您的姓名</label>
+                            <input type="text" id="name" class="form-control" required> -->
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="email" data-key="form.email">电子邮箱</label>
+                            <input type="email" id="email" class="form-control" required> -->
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="phone" data-key="form.phone">联系电话</label>
+                            <input type="tel" id="phone" class="form-control" required> -->
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="company" data-key="form.company">公司名称</label>
+                            <input type="text" id="company" class="form-control" required> -->
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="product" data-key="form.product">感兴趣的产品</label> -->
+                            <!-- <select id="product" class="form-control" required> -->
+                                <!-- <option value="" data-key="form.selectDefault">请选择产品类别</option>
+                                <option value="drilling" data-key="form.option1">钻井液添加剂</option>
+                                <option value="production" data-key="form.option2">采油用化学品</option>
+                                <option value="refining" data-key="form.option3">炼油助剂</option>
+                                <option value="water" data-key="form.option4">水处理化学品</option>
+                                <option value="special" data-key="form.option5">油田专用化学品</option>
+                                <option value="custom" data-key="form.option6">特种化学品</option> -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="message" data-key="form.message">您的需求</label>
+                            <textarea id="message" class="form-control" required placeholder="请详细描述您的需求，包括应用场景、技术要求等..."></textarea> -->
+                        </div>
+                        <!-- <button type="submit" class="btn btn-accent" data-key="form.submit">提交咨询</button> -->
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3 data-key="contact.info">联系信息</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-key="contact.address">公司地址</h4>
+                            <p data-key="contact.addressDetail">上海市奉贤区金海公路6055号11幢5层</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-key="contact.phone">联系电话</h4>
+                            <p>+86 185 9616 3506</p>
+                            <p>+86 199 0174 2629</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-key="contact.email">电子邮箱</h4>
+                            <p>shanghaihabibi@163.com</p>
+                            <p>shanghaihabibi@126.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>+86 185 9616 3506</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 data-key="footer.about">关于哈比比</h4>
+                    <p data-key="footer.aboutDesc">上海哈比比国际贸易有限公司，专注于石油助剂产品的研发与全球供应，为油田和炼油行业提供专业解决方案。</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-key="footer.links">快速链接</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-key="footer.link1">首页</a></li>
+                        <li><a href="#services" data-key="footer.link3">我们的服务</a></li>
+                        <li><a href="#products" data-key="footer.link4">产品中心</a></li>
+                        <li><a href="#contact" data-key="footer.link5">联系我们</a></li>
+                        <li><a href="about.html" data-key="footer.link2">关于我们</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 data-key="footer.categories">产品类别</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-key="footer.cat1">钻井液添加剂</a></li>
+                        <li><a href="#" data-key="footer.cat2">采油用化学品</a></li>
+                        <li><a href="#" data-key="footer.cat3">炼油助剂</a></li>
+                        <li><a href="#" data-key="footer.cat4">水处理化学品</a></li>
+                        <li><a href="#" data-key="footer.cat5">特种化学品</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-key="footer.contact">联系我们</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-key="footer.address">上海市奉贤区金海公路6055号11幢5层</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+86 199 0174 2629</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>shanghaihabibi@163.com</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+86 185 9616 3506</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 上海哈比比国际贸易有限公司 版权所有 | <span data-key="footer.icp">沪ICP</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Notification -->
+    <div class="language-notification" id="langNotification">
+        <i class="fas fa-language"></i>
+        <span id="notificationText">语言已切换为中文</span>
+        <button id="closeNotification">关闭</button>
+    </div>
+
+    <script>
+        // 语言包定义
+        const languagePack = {
+            'zh': {
+                // 导航
+                'nav.home': '首页',
+                'nav.about': '关于我们',
+                'nav.services': '服务',
+                'nav.products': '产品中心',
+                'nav.contact': '联系我们',
+                
+                // 首页
+                'hero.title': '石油助剂全球供应商，专业油田化学品解决方案',
+                'hero.subtitle': '上海哈比比国际贸易有限公司，专注于为全球石油行业提供高质量的助剂产品。拥有10年行业经验，产品服务于全球30多个国家的油田和炼油厂。',
+                'hero.btn1': '浏览产品',
+                'hero.btn2': '获取技术资料',
+
+
+                //石油助剂核心优势
+                'advantage.title':'石油助剂核心优势',
+                'advantage.desc':'专业品质，全球认证，可靠供应',
+                'advantage.item1.title':'专业技术',
+                'advantage.item1.desc':'拥有石油化工专业研发团队，持续创新产品配方',
+                'advantage.item2.title':'国际认证',
+                'advantage.item2.desc':'所有产品通过API、ISO9001等国际质量体系认证',
+                'advantage.item3.title':'全球供应',
+                'advantage.item3.desc':'完善的国际物流体系，确保全球范围内及时交付',
+                
+                
+                // 服务
+                'services.title': '我们的核心服务',
+                'services.item1.title': '油田化学品供应',
+                'services.item1.desc': '提供钻井液添加剂、完井液、压裂液等全套油田化学品解决方案。',
+                'services.item2.title': '炼油助剂定制',
+                'services.item2.desc': '针对炼油工艺需求，提供催化剂、缓蚀剂、阻垢剂等定制化产品。',
+                'services.item3.title': '全球物流支持',
+                'services.item3.desc': '危险品专业运输，全球主要石油产区门到门配送服务。',
+
+                // 产品分类
+                'categories.title': '产品分类',
+                'categories.subtitle': '专业石油助剂产品系列',
+                'categories.item1.title': '钻井液添加剂',
+                'categories.item1.desc': '降滤失剂、增粘剂、页岩抑制剂等',
+                'categories.item1.count': '22 种产品',
+                'categories.item2.title': '采油用化学品',
+                'categories.item2.desc': '破乳剂、缓蚀剂、清蜡剂等',
+                'categories.item2.count': '18 种产品',
+                'categories.item3.title': '炼油助剂',
+                'categories.item3.desc': '催化剂、中和剂、阻垢剂等',
+                'categories.item3.count': '15 种产品',
+                'categories.item4.title': '水处理化学品',
+                'categories.item4.desc': '絮凝剂、杀菌剂、缓蚀剂等',
+                'categories.item4.count': '12 种产品',
+                'categories.item5.title': '油田专用化学品',
+                'categories.item5.desc': '解堵剂、调剖剂、防膨剂等',
+                'categories.item5.count': '10 种产品',
+                'categories.item6.title': '特种化学品',
+                'categories.item6.desc': '消泡剂、润滑剂、表面活性剂等',
+                'categories.item6.count': '8 种产品',
+                
+                // 产品中心
+                'products.title': '石油助剂产品中心',
+                'products.subtitle': '专业油田化学品解决方案',
+                'products.search': '搜索产品...',
+                'filter.all': '所有产品',
+                'filter.hot': '热销产品',
+                'filter.new': '新产品',
+                'filter.custom': '定制产品',
+                'badge.hot': '热销',
+                'badge.new': '新品',
+                'badge.sale': '促销',
+                'product1.title': '高效破乳剂',
+                'product1.desc': '快速分离油水乳液，适用于各种原油类型',
+                'product1.spec1': '阳离子型',
+                'product1.spec2': '耐高温',
+                'product1.spec3': 'MOQ: 1吨',
+                'product2.title': '钻井液降滤失剂',
+                'product2.desc': '有效控制滤失量，保护油气层',
+                'product2.spec1': 'API认证',
+                'product2.spec2': '低固相',
+                'product2.spec3': 'MOQ: 2吨',
+                'product3.title': '高效缓蚀剂',
+                'product3.desc': '保护设备免受腐蚀，延长使用寿命',
+                'product3.spec1': '有机胺类',
+                'product3.spec2': '水溶性',
+                'product3.spec3': 'MOQ: 1吨',
+                'product4.title': '高效消泡剂',
+                'product4.desc': '快速消除工业过程中的泡沫问题',
+                'product4.spec1': '有机硅类',
+                'product4.spec2': '耐高温',
+                'product4.spec3': 'MOQ: 500kg',
+                'product5.title': '防蜡剂',
+                'product5.desc': '防止油井结蜡，保障生产连续性',
+                'product5.spec1': '聚合物型',
+                'product5.spec2': '耐低温',
+                'product5.spec3': 'MOQ: 1吨',
+                'product6.title': '高效杀菌剂',
+                'product6.desc': '控制微生物生长，防止系统腐蚀',
+                'product6.spec1': '季铵盐类',
+                'product6.spec2': '环保型',
+                'product6.spec3': 'MOQ: 500kg',
+                'action.inquiry': '获取技术参数',
+                
+                'contact.title': '联系我们',
+                'contact.info': '联系信息',
+                'contact.address': '公司地址',
+                'contact.addressDetail': '上海市奉贤区金海公路6055号11幢5层',
+                'contact.phone': '联系电话',
+                'contact.email': '电子邮箱',
+                
+                // 表单
+                //'form.title': '技术咨询与报价',
+                //'form.name': '您的姓名',
+                //'form.email': '电子邮箱',
+                //'form.phone': '联系电话',
+                //'form.company': '公司名称',
+                //'form.product': '感兴趣的产品',
+                //'form.selectDefault': '请选择产品类别',
+                //'form.option1': '钻井液添加剂',
+                //'form.option2': '采油用化学品',
+                //'form.option3': '炼油助剂',
+                //'form.option4': '水处理化学品',
+                //'form.option5': '油田专用化学品',
+                //'form.option6': '特种化学品',
+                //'form.message': '您的需求',
+                //'form.submit': '提交咨询',
+                
+                // 页脚
+                'footer.about': '关于哈比比',
+                'footer.aboutDesc': '上海哈比比国际贸易有限公司，专注于石油助剂产品的研发与全球供应，为油田和炼油行业提供专业解决方案。',
+                'footer.categories': '产品类别',
+                'footer.cat1': '钻井液添加剂',
+                'footer.cat2': '采油用化学品',
+                'footer.cat3': '炼油助剂',
+                'footer.cat4': '水处理化学品',
+                'footer.cat5': '特种化学品',
+                'footer.links': '快速链接',
+                'footer.link1': '首页',
+                'footer.link2': '关于我们',
+                'footer.link3': '我们的服务',
+                'footer.link4': '产品中心',
+                'footer.link5': '联系我们',
+                'footer.contact': '联系我们',
+                'footer.address': '上海市奉贤区金海公路6055号11幢5层',
+                'footer.icp': '沪ICP',
+                
+                // 通知
+                'notification.text': '语言已切换为中文',
+                'notification.close': '关闭'
+            },
+            'en': {
+                'nav.home': 'Home',
+                'nav.about': 'About Us',
+                'nav.services': 'Services',
+                'nav.products': 'Products',
+                'nav.contact': 'Contact',
+                
+                'hero.title': 'Global Supplier of Petroleum Additives, Professional Oilfield Chemical Solutions',
+                'hero.subtitle': 'Shanghai Habibi International Trade Co., Ltd. specializes in providing high-quality additives for the global petroleum industry. With 10 years of industry experience, our products serve oilfields and refineries in more than 30 countries worldwide.',
+                'hero.btn1': 'Browse Products',
+                'hero.btn2': 'Get Technical Data',
+                
+                //石油助剂核心优势
+                'advantage.title':'Core Advantages of Petroleum Additives',
+                'advantage.desc':'Professional Quality, Global Certification, Reliable Supply',
+                'advantage.item1.title':'Professional Skill',
+                'advantage.item1.desc':'With A Professional R&D Team In Petrochemicals, We Continuously Innovate Product Formulas',
+                'advantage.item2.title':'International Certification',
+                'advantage.item2.desc':'All Products Have Passed International Quality System Certifications Such As API and ISO9001',
+                'advantage.item3.title':'Global Supply',
+                'advantage.item3.desc':'A Well-established International Logistics System Ensures Timely Delivery Worldwide',
+
+                'services.title': 'Our Core Services',
+                'services.item1.title': 'Oilfield Chemical Supply',
+                'services.item1.desc': 'Comprehensive solutions for drilling fluid additives, completion fluids, fracturing fluids, etc.',
+                'services.item2.title': 'Refining Additives Customization',
+                'services.item2.desc': 'Customized products including catalysts, corrosion inhibitors, scale inhibitors for refining processes.',
+                'services.item3.title': 'Global Logistics Support',
+                'services.item3.desc': 'Professional hazardous material transportation, door-to-door delivery to major oil production areas worldwide.',
+                
+                'categories.title': 'Product Categories',
+                'categories.subtitle': 'Professional Petroleum Additives Series',
+                'categories.item1.title': 'Drilling Fluid Additives',
+                'categories.item1.desc': 'Fluid loss reducers, viscosifiers, shale inhibitors, etc.',
+                'categories.item1.count': '22 Products',
+                'categories.item2.title': 'Production Chemicals',
+                'categories.item2.desc': 'Demulsifiers, corrosion inhibitors, paraffin removers, etc.',
+                'categories.item2.count': '18 Products',
+                'categories.item3.title': 'Refining Additives',
+                'categories.item3.desc': 'Catalysts, neutralizers, scale inhibitors, etc.',
+                'categories.item3.count': '15 Products',
+                'categories.item4.title': 'Water Treatment Chemicals',
+                'categories.item4.desc': 'Flocculants, biocides, corrosion inhibitors, etc.',
+                'categories.item4.count': '12 Products',
+                'categories.item5.title': 'Specialty Oilfield Chemicals',
+                'categories.item5.desc': 'Plug removal agents, profile control agents, anti-swelling agents, etc.',
+                'categories.item5.count': '10 Products',
+                'categories.item6.title': 'Specialty Chemicals',
+                'categories.item6.desc': 'Defoamers, lubricants, surfactants, etc.',
+                'categories.item6.count': '8 Products',
+                
+                'products.title': 'Petroleum Additives Center',
+                'products.subtitle': 'Professional Oilfield Chemical Solutions',
+                'products.search': 'Search products...',
+                'filter.all': 'All Products',
+                'filter.hot': 'Hot Selling',
+                'filter.new': 'New Products',
+                'filter.custom': 'Custom Products',
+                'badge.hot': 'Hot',
+                'badge.new': 'New',
+                'badge.sale': 'Sale',
+                'product1.title': 'High Efficiency Demulsifier',
+                'product1.desc': 'Rapid separation of oil-water emulsions, suitable for various crude oil types',
+                'product1.spec1': 'Cationic Type',
+                'product1.spec2': 'High Temperature Resistance',
+                'product1.spec3': 'MOQ: 1 Ton',
+                'product2.title': 'Drilling Fluid Filtration Reducer',
+                'product2.desc': 'Effectively controls fluid loss, protects oil and gas reservoirs',
+                'product2.spec1': 'API Certified',
+                'product2.spec2': 'Low Solids',
+                'product2.spec3': 'MOQ: 2 Tons',
+                'product3.title': 'High Efficiency Corrosion Inhibitor',
+                'product3.desc': 'Protects equipment from corrosion, extends service life',
+                'product3.spec1': 'Organic Amine Type',
+                'product3.spec2': 'Water Soluble',
+                'product3.spec3': 'MOQ: 1 Ton',
+                'product4.title': 'High Efficiency Defoamer',
+                'product4.desc': 'Quickly eliminates foam problems in industrial processes',
+                'product4.spec1': 'Silicone Type',
+                'product4.spec2': 'High Temperature Resistance',
+                'product4.spec3': 'MOQ: 500kg',
+                'product5.title': 'Paraffin Inhibitor',
+                'product5.desc': 'Prevents wax deposition in oil wells, ensures continuous production',
+                'product5.spec1': 'Polymer Type',
+                'product5.spec2': 'Low Temperature Resistance',
+                'product5.spec3': 'MOQ: 1 Ton',
+                'product6.title': 'High Efficiency Biocide',
+                'product6.desc': 'Controls microbial growth, prevents system corrosion',
+                'product6.spec1': 'Quaternary Ammonium Type',
+                'product6.spec2': 'Environmentally Friendly',
+                'product6.spec3': 'MOQ: 500kg',
+                'action.inquiry': 'Get Technical Specs',
+                
+                'contact.title': 'Contact Us',
+                'contact.info': 'Contact Information',
+                'contact.address': 'Company Address',
+                'contact.addressDetail': '5th Floor, Building 11, No. 6055 Jinhai Highway, Fengxian District, Shanghai, China.',
+                'contact.phone': 'Phone',
+                'contact.email': 'Email',
+                
+                'form.title': 'Technical Consultation & Quotation',
+                'form.name': 'Your Name',
+                'form.email': 'Email Address',
+                'form.phone': 'Phone Number',
+                'form.company': 'Company Name',
+                'form.product': 'Product of Interest',
+                'form.selectDefault': 'Select Product Category',
+                'form.option1': 'Drilling Fluid Additives',
+                'form.option2': 'Production Chemicals',
+                'form.option3': 'Refining Additives',
+                'form.option4': 'Water Treatment Chemicals',
+                'form.option5': 'Specialty Oilfield Chemicals',
+                'form.option6': 'Specialty Chemicals',
+                'form.message': 'Your Requirements',
+                'form.submit': 'Submit Inquiry',
+                
+                'footer.about': 'About Habibi',
+                'footer.aboutDesc': 'Shanghai Habibi International Trading Co., Ltd. focuses on the R&D and global supply of petroleum additives, providing professional solutions for the oilfield and refining industries.',
+                'footer.categories': 'Product Categories',
+                'footer.cat1': 'Drilling Fluid Additives',
+                'footer.cat2': 'Production Chemicals',
+                'footer.cat3': 'Refining Additives',
+                'footer.cat4': 'Water Treatment Chemicals',
+                'footer.cat5': 'Specialty Chemicals',
+                'footer.links': 'Quick Links',
+                'footer.link1': 'Home',
+                'footer.link2': 'About Us',
+                'footer.link3': 'Services',
+                'footer.link4': 'Products',
+                'footer.link5': 'Contact',
+                'footer.contact': 'Contact Us',
+                'footer.address': '5th Floor, Building 11, No. 6055 Jinhai Highway, Fengxian District, Shanghai, China.',
+                'footer.icp': 'Shanghai ICP No. ',
+                
+                'notification.text': 'Language switched to English',
+                'notification.close': 'Close'
+            }
+        };
+
+        // 当前语言
+        let currentLanguage = 'zh';
+        
+        // 切换语言函数
+        function changeLanguage(lang) {
+            currentLanguage = lang;
+            
+            // 更新所有带data-key属性的元素
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (languagePack[lang][key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.placeholder = languagePack[lang][key];
+                    } else if (element.tagName === 'OPTION') {
+                        element.textContent = languagePack[lang][key];
+                    } else {
+                        element.textContent = languagePack[lang][key];
+                    }
+                }
+            });
+            
+            // 更新活动语言按钮
+            document.querySelectorAll('.language-switcher button').forEach(button => {
+                button.classList.remove('active');
+                if (button.getAttribute('data-lang') === lang) {
+                    button.classList.add('active');
+                }
+            });
+            
+            // 显示通知
+            showLanguageNotification(lang);
+        }
+        
+        // 显示语言切换通知
+        function showLanguageNotification(lang) {
+            const notification = document.getElementById('langNotification');
+            const text = document.getElementById('notificationText');
+            const closeBtn = document.getElementById('closeNotification');
+            
+            text.textContent = languagePack[lang]['notification.text'];
+            closeBtn.textContent = languagePack[lang]['notification.close'];
+            
+            notification.classList.add('show');
+            
+            // 5秒后自动隐藏
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 5000);
+        }
+
+        // 初始化语言
+        document.addEventListener('DOMContentLoaded', function() {
+            // 默认中文
+            changeLanguage('zh');
+            
+            // 语言切换按钮事件
+            document.querySelectorAll('.language-switcher button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const lang = button.getAttribute('data-lang');
+                    changeLanguage(lang);
+                });
+            });
+            
+            // 关闭通知按钮
+            document.getElementById('closeNotification').addEventListener('click', () => {
+                document.getElementById('langNotification').classList.remove('show');
+            });
+            
+            // Mobile menu toggle
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                mobileToggle.querySelector('i').classList.toggle('fa-bars');
+                mobileToggle.querySelector('i').classList.toggle('fa-times');
+            });
+            
+            // Form submission
+            const inquiryForm = document.getElementById('inquiryForm');
+            
+            inquiryForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                
+                // Show success message
+                alert('感谢您的咨询！我们的技术团队将尽快与您联系。');
+                
+                // Reset form
+                inquiryForm.reset();
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        navMenu.classList.remove('active');
+                        mobileToggle.querySelector('i').classList.add('fa-bars');
+                        mobileToggle.querySelector('i').classList.remove('fa-times');
+                    }
+                });
+            });
+            
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('header');
+                if (window.scrollY > 100) {
+                    header.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+                    header.style.background = 'rgba(255, 255, 255, 0.98)';
+                } else {
+                    header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+                    header.style.background = 'rgba(255, 255, 255, 0.95)';
+                }
+            });
+            
+            // Filter buttons
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                });
+            });
+            
+            // Pagination
+            const pageItems = document.querySelectorAll('.page-item');
+            pageItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    pageItems.forEach(page => page.classList.remove('active'));
+                    item.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
